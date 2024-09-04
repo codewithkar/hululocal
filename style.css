@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: -box; */
+    box-sizing: border-box;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+body{
+    max-width: 100vw;
+    height: 100vh;
+    background: rgb(252,252,252);
+}
+/* ...........header section............ */
+header{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), 
+                      url('https://cnbl-cdn.bamgrid.com/assets/186e8d6e466eb3623bf5d2807510e4c24c582f4896dc0e822f662fa0ea35130c/original');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px;
+    
+}
+header svg{
+    fill: #1CE783;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    height: 70px;
+    margin: 0 auto;
+}
+.navbar button{
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #F4F4F5;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.headercontent{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 90px;
+}
+.headercontent .content{
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: #1CE783;
+    padding: 0 20px;
+}
+.headercontent .content h6{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.headercontent .content h1{
+    color: white;
+    font-weight: lighter;
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+.headercontent .content img{
+    padding: 10px;
+    width: 300px;
+    
+}
+.headercontent .content .img2{
+    width: 200px;
+}
+.headercontent .content button{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #1CE783;
+    height: 40px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.linkhead{
+    padding: 15px 325px;
+    width: 50%;
+    text-align: center;
+    
+}
+.termsapply{
+    text-align: center;
+    color: rgb(209, 202, 202);
+    font-size: x-small;
+}
+.linkhead p{
+    padding: 10px;
+    font-weight: lighter;
+}
+.linkhead h5 a{
+    color: white;
+    font-weight: lighter;
+}
+
+/* ......................bundle max section............. */
+
+.maxbundle{
+    background-image: linear-gradient(to right, #091823 , #0E4251);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagemax {
+    width: 25%;
+    padding: 10px;
+}
+.maxbundle img{
+    width: 100%;
+}
+.contentmax{
+    padding: 10px;
+    width: 45%;
+}
+.h5{
+    color: #1CE783;
+    font-weight: bold;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    font-size: .7rem;
+}
+.contentmax h2{
+    color: white;
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+.contentmax p{
+    font-size: x-small;
+    color: rgb(247, 244, 244);
+}
+.buttonmax{
+    width: 20%;
+    text-align: center;
+}
+.buttonmax button{
+    width: 65%;
+    border: 0;
+    outline: none;
+    background: #1CE783;
+    height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ..................start build plan section.......... */
+
+.buildplan{
+    background-image: linear-gradient(to top, #172423 , #279B62);
+    height: 150px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.buildplan h2{
+    color: white;
+    padding: 25px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.buildplan button{
+    padding: 15px 90px;
+    border-radius: 5px;
+    font-size: small;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    background: transparent;
+    border: 0;
+    outline: none;
+    border: 2px solid white;
+}
+
+/* ........................plans section.......... */
+.plans{
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.headlines{
+    padding-top: 0px 100px;
+    padding-top: 90px;
+}
+.plans h1{
+    color: white;
+    font-size: 2.5rem;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+.plans p{
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0 225px;
+    padding-bottom: 50px;
+}
+.imageplan{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.imageplan .card{
+    width: 23%;
+    align-content: center;
+    position: relative;
+}
+
+.imageplan .card img{
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+    object-fit: cover;
+}
