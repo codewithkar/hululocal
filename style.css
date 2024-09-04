@@ -1,16 +1,17 @@
 *{
     padding: 0;
     margin: 0;
-    /* box-sizing: -box; */
     box-sizing: border-box;
     font-family:  Arial, Helvetica, sans-serif;
 }
-body{
+html, body {
+    margin: 0;
+    padding: 0;
     max-width: 100vw;
     height: 100vh;
-    background: rgb(252,252,252);
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
-/* ...........header section............ */
+
 header{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), 
                       url('https://cnbl-cdn.bamgrid.com/assets/186e8d6e466eb3623bf5d2807510e4c24c582f4896dc0e822f662fa0ea35130c/original');
@@ -18,7 +19,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
+    max-width: 100%;
     height: 600px;
     
 }
@@ -42,7 +43,7 @@ header svg{
     font-weight: bold;
 }
 .headercontent{
-    width: 60%;
+    max-width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,7 +51,7 @@ header svg{
     padding-top: 90px;
 }
 .headercontent .content{
-    width: 50%;
+    max-width: 50%;
     align-items: center;
     justify-content: center;
     align-content: center;
@@ -70,14 +71,14 @@ header svg{
 }
 .headercontent .content img{
     padding: 10px;
-    width: 300px;
+    max-width: 300px;
     
 }
 .headercontent .content .img2{
-    width: 200px;
+    max-width: 200px;
 }
 .headercontent .content button{
-    width: 100%;
+    max-width: 100%;
     border: 0;
     outline: none;
     background: #1CE783;
@@ -88,7 +89,7 @@ header svg{
     letter-spacing: 1px;
 }
 .linkhead{
-    padding: 15px 325px;
+    margin: 15px 325px;
     width: 50%;
     text-align: center;
     
@@ -230,4 +231,145 @@ header svg{
     height: 450px;
     border-radius: 15px;
     object-fit: cover;
+}
+.smaller{
+    color: #d9d9db;
+    font-size: xx-small;
+    letter-spacing: 1px;
+}
+
+.tryhulu h4{
+    color: #1CE783;
+    font-size: small;
+}
+.tryhulu h3{
+    font-size: 1.1rem;
+    color: white;
+    padding: 0 225px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+}
+.tryhulu button{
+    padding: 15px 25px;
+    background: #1CE783;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* .............................sports section..................... */
+.sports{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),url(https://cnbl-cdn.bamgrid.com/assets/3ab6ce86baaf4225b072c58fa9497ec949c0c9e284b3958ecda1429b7f3744f9/original);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    height: 700px;
+    align-content: start;
+}
+.sportscontent{
+    width: 60%;
+    padding-left: 150px;
+    justify-content: center;
+    padding-right: 100px;
+}
+.sportsnav {
+    display: flex;
+    justify-content: left;
+    padding-top: 150px;
+    width: 100%;
+}
+
+.sportsnav a {
+    color: rgb(170, 175, 172);
+    padding: 10px 8px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+}
+
+.sportsnav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust the distance between the text and the line */
+    width: 0;
+    height: 4px;
+    background-color: white; /* Color of the underline */
+    /* transition: width 0.1s; */
+}
+
+.sportscontent a.active::after {
+    width: 100%;
+}
+
+.sportscontent a.active {
+    color: white; /* Optional: Change color of active nav item */
+}
+.livesports{
+    padding: 50px 0;
+    justify-content: center;
+}
+.livesports h1{
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+.livesports h6{
+    color: white;
+    font-size: 1rem;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}
+.roundimg{
+    width: 70%;
+    display: flex;
+    padding: 15px 0px;
+    align-content: center;
+    justify-content: space-between;
+}
+.roundimg .imgdiv{
+    background: white;
+    border-radius: 50%;
+    width: 15%;
+    align-content: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.roundimg .imgdiv img{
+ width: 100%;
+ object-fit: fill;
+}
+.selectplan{
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.selectplan .planhead{
+    align-content: center;
+    text-align: center;
+    padding-top:70px ;
+}
+.planhead h1{
+    font-size: 3rem;
+}
+.planhead h6{
+    font-size: 1.1rem;
+    font-weight: lighter;
+    padding: 0px 350px;
+    padding-top: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+}
+.planhead button{
+    background: white;
+    border: 0;
+    border-radius: 20px;
+    height: 50px;
+    padding: 0 90px;
+    text-align: center;
 }
