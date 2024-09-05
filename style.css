@@ -78,7 +78,7 @@ header svg{
     max-width: 200px;
 }
 .headercontent .content button{
-    max-width: 100%;
+    width: 100%;
     border: 0;
     outline: none;
     background: #1CE783;
@@ -348,6 +348,7 @@ header svg{
     align-items: center;
     justify-content: center;
     color: white;
+    margin: 0 auto;
 }
 .selectplan .planhead{
     align-content: center;
@@ -368,8 +369,138 @@ header svg{
 .planhead button{
     background: white;
     border: 0;
-    border-radius: 20px;
+    border-radius: 30px;
     height: 50px;
-    padding: 0 90px;
+    padding: 0px 30px;
     text-align: center;
+    font-weight: bold;
 }
+.planhead button i{
+    color: black;
+}
+.valueplan{
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+
+}
+.valueplan{
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+.valueplan .bestvalue{
+    padding-right: 270px;
+}
+.bestvalue button{
+   border: 0;
+   background: #1CE783;
+   color: black;
+   border-radius: 10px;
+   font-size: x-small;
+   padding: 5px;
+   font-weight: bold;
+}
+.valueplan nav ul{
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 100px;
+}
+.valueplan nav ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: 15px;
+    align-items: center;
+
+}
+.valueplan nav ul li img{
+    width: 100px;
+}
+.valueplan nav ul li p{
+    font-size: small;
+    padding: 20px;
+
+}
+.valueplan nav ul li button{
+    border: 0;
+    /* font-size: ; */
+    font-weight: bold;
+    padding: 10px;
+}
+
+.features-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.features-table th,
+.features-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #2c2f36;
+}
+
+.features-table th {
+    font-weight: normal;
+    color: #a8adb7;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    color: #a8adb7;
+    margin-top: 30px;
+}
+
+/* ...................footer........ */
+.footer {
+    background: #ebedf2;
+    color: #333;
+  }
+  
+  .footer a {
+    color: #767373;
+    text-decoration: none;
+  }
+  
+  .footer-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px;
+  }
+  
+  .footer-lists {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-lists ul{
+    padding: 50px;
+  }
+  .footer-lists ul li{
+    list-style: none;
+    padding: 10px 0;
+    font-size: small;
+    color: #0e0e10;
+  }
+  .footer-lists .list-head {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  .divider {
+    width: 100%;
+    height: 3px;
+    border-top: 1px solid #ccc;
+    margin: 30px 0;
+  }
+  
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+  }
